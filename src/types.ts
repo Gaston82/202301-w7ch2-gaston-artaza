@@ -16,6 +16,11 @@ export interface UserCredentials {
   password: string;
 }
 
+export interface UserRegister extends UserCredentials {
+  email: string;
+  image: string;
+}
+
 export type RobotsStructure = RobotStructure[];
 
 export interface CustomRequest extends Request {
