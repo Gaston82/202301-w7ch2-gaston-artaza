@@ -23,7 +23,7 @@ export const registerUser = async (
     image,
   });
 
-  res.status(200).json(newUser);
+  res.status(201).json({ newUser, message: "The user has been created" });
 };
 
 const loginUser = async (
